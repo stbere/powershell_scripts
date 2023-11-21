@@ -24,7 +24,8 @@ $body = @{
 # Pass PBI token thru API service
 $tokenResponse = Invoke-RestMethod -Uri $tokenUrl -Method POST -Body $body
 
-$workspacesUrl = "https://api.powerbi.com/v1.0/myorg/groups"
+# Previously missing the /admin/ from workspacesUrl - can adjust top=5000
+$workspacesUrl = "https://api.powerbi.com/v1.0/myorg/admin/groups?%24top=5000"
 $header = @{
     "Authorization" = "Bearer $($tokenResponse.access_token)"
 }
