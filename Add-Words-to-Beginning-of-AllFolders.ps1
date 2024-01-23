@@ -6,3 +6,5 @@ $newName = "new_" + $file.Name
 $newPath = Join-Path -Path $folderPath -ChildPath $newName
 Rename-Item -Path $file.FullName -NewName $newName
 }
+
+# You can modify the `$newName` variable to suit your renaming requirements.
