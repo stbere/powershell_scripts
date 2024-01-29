@@ -26,7 +26,7 @@ $body = @{
 $tokenResponse = Invoke-RestMethod -Uri $tokenUrl -Method POST -Body $body
 
 # Specify your Power BI username or email as the new owner
-$newOwner = "ablasisa@hpinc.com"
+$newOwner = "YourNewWorkspaceOwner@domain.com" # Change this
 
 # Connect to Power BI service using the obtained token and credentials
 Connect-PowerBIServiceAccount -ServicePrincipal -Credential $credential -TenantId $tenantId -ErrorAction Stop
