@@ -1,6 +1,7 @@
 # powershell_scripts
-Repository for my Powershell scripting
+Repository for my Powershell scripting  - simple scripts that can help increase productivity!
 
+![Nyan](https://www.icegif.com/wp-content/uploads/2023/02/icegif-1500.gif)
 
 Various PS7 cmdlets:
 
